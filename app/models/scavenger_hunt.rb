@@ -1,4 +1,4 @@
 class ScavengerHunt < ActiveRecord::Base
-  belongs_to :family
+  has_many :games
 
 end

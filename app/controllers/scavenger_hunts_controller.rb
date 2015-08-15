@@ -1,0 +1,2 @@
+class ScavengerHuntsController < ApplicationController
+end

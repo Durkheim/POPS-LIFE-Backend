@@ -1,7 +1,17 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+father = User.create(username: "father", password: "password")
+son = User.create(username: "son", password: "password")
+
+scavenger_hunt = ScavengerHunt.create(name: "ScavengerHunt")
+
+mission = Mission.create(image:"homeandstudio_0_0.jpg", clue: "Famous architect's abode", lat: "90", long: "90", hint: "Ol' Frankie", scavenger_hunt: scavenger_hunt)
+
+mission = Mission.create(image:"homeandstudio_0_0.jpg", clue: "Famous architect's abode", lat: "90", long: "90", hint: "Ol' Frankie", scavenger_hunt: scavenger_hunt)
+
+mission = Mission.create(image:"homeandstudio_0_0.jpg", clue: "Famous architect's abode", lat: "90", long: "90", hint: "Ol' Frankie", scavenger_hunt: scavenger_hunt)
+
+mission = Mission.create(image:"homeandstudio_0_0.jpg", clue: "Famous architect's abode", lat: "90", long: "90", hint: "Ol' Frankie", scavenger_hunt: scavenger_hunt)
+
+mission = Mission.create(image:"homeandstudio_0_0.jpg", clue: "Famous architect's abode", lat: "90", long: "90", hint: "Ol' Frankie", scavenger_hunt: scavenger_hunt)
+
+game = Game.create(player_one: father, player_two: son, scavenger_hunt: scavenger_hunt)
+

@@ -11,20 +11,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150815190116) do
+ActiveRecord::Schema.define(version: 20150815212311) do
 
-  create_table "families", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+  create_table "games", force: :cascade do |t|
+    t.integer  "player_one_id"
+    t.integer  "player_two_id"
+    t.integer  "scavenger_hunt_id"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
   end
 
-  create_table "houses", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+  create_table "missions", force: :cascade do |t|
+    t.string   "image"
+    t.string   "clue"
+    t.string   "lat"
+    t.string   "long"
+    t.string   "hint"
+    t.integer  "scavenger_hunt_id"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
   end
 
   create_table "scavenger_hunts", force: :cascade do |t|
-    t.integer  "family_id"
+    t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -32,7 +41,6 @@ ActiveRecord::Schema.define(version: 20150815190116) do
   create_table "users", force: :cascade do |t|
     t.string   "username"
     t.string   "password_digest"
-    t.integer  "family_id"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
   end
