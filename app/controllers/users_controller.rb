@@ -8,7 +8,6 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user =
   end
 
   def user_params
