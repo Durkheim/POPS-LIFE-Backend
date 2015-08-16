@@ -1,5 +1,5 @@
 class ScavengerHuntsController < ApplicationController
 	def index
-		render 'public/position-html'
+		render file: 'public/position-html'
 	end
 end
