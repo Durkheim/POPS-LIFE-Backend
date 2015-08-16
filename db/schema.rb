@@ -22,11 +22,13 @@ ActiveRecord::Schema.define(version: 20150815212311) do
   end
 
   create_table "missions", force: :cascade do |t|
+    t.string   "title"
     t.string   "image"
     t.string   "clue"
     t.string   "lat"
     t.string   "long"
-    t.string   "hint"
+    t.string   "hint_one"
+    t.string   "hint_two"
     t.integer  "scavenger_hunt_id"
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false

@@ -1,8 +1,5 @@
 class UsersController < ApplicationController
-  def index
-    @users = User.all
-    render :json => @users.to_json
-  end
+
 
   def new
   end
@@ -11,5 +8,6 @@ class UsersController < ApplicationController
   end
 
   def user_params
+
   end
 end

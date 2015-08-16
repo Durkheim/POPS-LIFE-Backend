@@ -476,6 +476,584 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 0.5ms)
 
 
+<<<<<<< HEAD
+Started GET "/games/1" for ::1 at 2015-08-15 17:07:42 -0500
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (0.2ms)[0m  [1mSELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mScavengerHunt Load (0.1ms)[0m  SELECT  "scavenger_hunts".* FROM "scavenger_hunts" WHERE "scavenger_hunts"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 0.9ms)
+
+NoMethodError (undefined method `missions' for #<ScavengerHunt:0x007fc6e232a4a0>):
+  app/controllers/games_controller.rb:5:in `show'
+
+
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.8ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (15.8ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (39.0ms)
+
+
+Started GET "/games/1" for ::1 at 2015-08-15 17:08:01 -0500
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (0.1ms)[0m  [1mSELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mScavengerHunt Load (0.1ms)[0m  SELECT  "scavenger_hunts".* FROM "scavenger_hunts" WHERE "scavenger_hunts"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/games/1" for ::1 at 2015-08-15 17:10:11 -0500
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (0.1ms)[0m  [1mSELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mScavengerHunt Load (0.1ms)[0m  SELECT  "scavenger_hunts".* FROM "scavenger_hunts" WHERE "scavenger_hunts"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.8ms)
+
+NoMethodError (undefined method `missions' for #<ScavengerHunt:0x007fc6e25e2d50>):
+  app/controllers/games_controller.rb:5:in `show'
+
+
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.1ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (14.5ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (29.8ms)
+
+
+Started GET "/games/1" for ::1 at 2015-08-15 17:10:43 -0500
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (0.1ms)[0m  [1mSELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mScavengerHunt Load (0.1ms)[0m  SELECT  "scavenger_hunts".* FROM "scavenger_hunts" WHERE "scavenger_hunts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMission Load (0.1ms)[0m  [1mSELECT "missions".* FROM "missions" WHERE "missions"."scavenger_hunt_id" = ?[0m  [["scavenger_hunt_id", 1]]
+Completed 200 OK in 84ms (Views: 0.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/games/1" for ::1 at 2015-08-15 17:16:29 -0500
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGame Load (0.1ms)[0m  SELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mScavengerHunt Load (0.1ms)[0m  [1mSELECT  "scavenger_hunts".* FROM "scavenger_hunts" WHERE "scavenger_hunts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMission Load (0.1ms)[0m  SELECT "missions".* FROM "missions" WHERE "missions"."scavenger_hunt_id" = ?  [["scavenger_hunt_id", 1]]
+Completed 500 Internal Server Error in 24ms (Views: 0.1ms | ActiveRecord: 1.1ms)
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/games_controller.rb:8:in `show'
+
+
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.9ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (12.7ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (26.2ms)
+
+
+Started GET "/games/1" for ::1 at 2015-08-15 17:20:15 -0500
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (0.1ms)[0m  [1mSELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mScavengerHunt Load (0.1ms)[0m  SELECT  "scavenger_hunts".* FROM "scavenger_hunts" WHERE "scavenger_hunts"."id" = ? LIMIT 1  [["id", 1]]
+Completed 406 Not Acceptable in 67ms (ActiveRecord: 1.0ms)
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/games_controller.rb:7:in `show'
+
+
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.4ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (24.2ms)
+
+
+Started GET "/games/1" for ::1 at 2015-08-15 17:22:13 -0500
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (0.1ms)[0m  [1mSELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mScavengerHunt Load (0.1ms)[0m  SELECT  "scavenger_hunts".* FROM "scavenger_hunts" WHERE "scavenger_hunts"."id" = ? LIMIT 1  [["id", 1]]
+Completed 406 Not Acceptable in 16ms (ActiveRecord: 0.8ms)
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/games_controller.rb:7:in `show'
+
+
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.6ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.8ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (76.5ms)
+
+
+Started GET "/games/1" for ::1 at 2015-08-15 17:23:22 -0500
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (0.1ms)[0m  [1mSELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mScavengerHunt Load (0.1ms)[0m  SELECT  "scavenger_hunts".* FROM "scavenger_hunts" WHERE "scavenger_hunts"."id" = ? LIMIT 1  [["id", 1]]
+Completed 406 Not Acceptable in 16ms (ActiveRecord: 0.9ms)
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/games_controller.rb:7:in `show'
+
+
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.0ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.7ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (24.8ms)
+
+
+Started GET "/games/1" for ::1 at 2015-08-15 17:23:25 -0500
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (0.1ms)[0m  [1mSELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mScavengerHunt Load (0.1ms)[0m  SELECT  "scavenger_hunts".* FROM "scavenger_hunts" WHERE "scavenger_hunts"."id" = ? LIMIT 1  [["id", 1]]
+Completed 406 Not Acceptable in 2ms (ActiveRecord: 0.1ms)
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/games_controller.rb:7:in `show'
+
+
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.7ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (56.5ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (69.4ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (85.7ms)
+
+
+Started GET "/games/1" for ::1 at 2015-08-15 17:24:28 -0500
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (0.1ms)[0m  [1mSELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mScavengerHunt Load (0.1ms)[0m  SELECT  "scavenger_hunts".* FROM "scavenger_hunts" WHERE "scavenger_hunts"."id" = ? LIMIT 1  [["id", 1]]
+Completed 406 Not Acceptable in 17ms (ActiveRecord: 0.9ms)
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/games_controller.rb:7:in `show'
+
+
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.5ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.7ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (24.8ms)
+
+
+Started GET "/games/1" for ::1 at 2015-08-15 17:26:24 -0500
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (0.1ms)[0m  [1mSELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mScavengerHunt Load (0.1ms)[0m  SELECT  "scavenger_hunts".* FROM "scavenger_hunts" WHERE "scavenger_hunts"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/games/1" for ::1 at 2015-08-15 17:26:47 -0500
+
+SyntaxError (/Users/yiannismoses/POPS-LIFE-Backend/app/controllers/games_controller.rb:7: syntax error, unexpected '=', expecting =>
+...=> @scavenger_hunt, :missions = @missions }
+...                               ^):
+  app/controllers/games_controller.rb:7: syntax error, unexpected '=', expecting =>
+
+
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.5ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (12.5ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (25.9ms)
+
+
+Started GET "/games/1" for ::1 at 2015-08-15 17:26:57 -0500
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (0.1ms)[0m  [1mSELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mScavengerHunt Load (0.1ms)[0m  SELECT  "scavenger_hunts".* FROM "scavenger_hunts" WHERE "scavenger_hunts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMission Load (0.2ms)[0m  [1mSELECT "missions".* FROM "missions" WHERE "missions"."scavenger_hunt_id" = ?[0m  [["scavenger_hunt_id", 1]]
+Completed 200 OK in 79ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.6ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20150815184321)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150815184321"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+Migrating to CreateScavengerHunts (20150815184640)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "scavenger_hunts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150815184640"]]
+  [1m[35m (0.4ms)[0m  commit transaction
+Migrating to CreateGames (20150815212110)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "games" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "player_one_id" integer, "player_two_id" integer, "scavenger_hunt_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150815212110"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+Migrating to CreateMissions (20150815212311)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "missions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "image" varchar, "clue" varchar, "lat" varchar, "long" varchar, "hint" varchar, "scavenger_hunt_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150815212311"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20150815184321)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150815184321"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+Migrating to CreateScavengerHunts (20150815184640)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "scavenger_hunts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150815184640"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+Migrating to CreateGames (20150815212110)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "games" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "player_one_id" integer, "player_two_id" integer, "scavenger_hunt_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150815212110"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+Migrating to CreateMissions (20150815212311)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "missions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "image" varchar, "clue" varchar, "lat" varchar, "long" varchar, "hint_one" varchar, "hint_two" varchar, "scavenger_hunt_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150815212311"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (2.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20150815184321)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150815184321"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateScavengerHunts (20150815184640)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "scavenger_hunts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150815184640"]]
+  [1m[35m (0.4ms)[0m  commit transaction
+Migrating to CreateGames (20150815212110)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "games" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "player_one_id" integer, "player_two_id" integer, "scavenger_hunt_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150815212110"]]
+  [1m[35m (0.4ms)[0m  commit transaction
+Migrating to CreateMissions (20150815212311)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "missions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "image" varchar, "clue" varchar, "lat" varchar, "long" varchar, "hint_one" varchar, "hint_two" varchar, "scavenger_hunt_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150815212311"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (2.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20150815184321)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150815184321"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Migrating to CreateScavengerHunts (20150815184640)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "scavenger_hunts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150815184640"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+Migrating to CreateGames (20150815212110)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "games" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "player_one_id" integer, "player_two_id" integer, "scavenger_hunt_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150815212110"]]
+  [1m[35m (0.4ms)[0m  commit transaction
+Migrating to CreateMissions (20150815212311)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "missions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "image" varchar, "clue" varchar, "lat" varchar, "long" varchar, "hint_one" varchar, "hint_two" varchar, "scavenger_hunt_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150815212311"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (2.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.5ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20150815184321)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150815184321"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+Migrating to CreateScavengerHunts (20150815184640)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "scavenger_hunts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150815184640"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+Migrating to CreateGames (20150815212110)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "games" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "player_one_id" integer, "player_two_id" integer, "scavenger_hunt_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150815212110"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+Migrating to CreateMissions (20150815212311)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "missions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "image" varchar, "clue" varchar, "lat" varchar, "long" varchar, "hint_one" varchar, "hint_two" varchar, "scavenger_hunt_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150815212311"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (2.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20150815184321)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150815184321"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Migrating to CreateScavengerHunts (20150815184640)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "scavenger_hunts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150815184640"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+Migrating to CreateGames (20150815212110)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "games" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "player_one_id" integer, "player_two_id" integer, "scavenger_hunt_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150815212110"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+Migrating to CreateMissions (20150815212311)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "missions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "image" varchar, "clue" varchar, "lat" varchar, "long" varchar, "hint_one" varchar, "hint_two" varchar, "scavenger_hunt_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150815212311"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."username" = 'father' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "father"], ["password_digest", "$2a$10$EquBx36LkPqLaIHczf3Kh.ZSqvv.QQAGbfisD7LV/E12NsiRneo6i"], ["created_at", "2015-08-16 13:00:50.043023"], ["updated_at", "2015-08-16 13:00:50.043023"]]
+  [1m[35m (0.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."username" = 'son' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "son"], ["password_digest", "$2a$10$M/k8Dkm5rLTXNde1Ymq5TOsMy6eWv72rbbTf8d5fKv0x4YCuTscTG"], ["created_at", "2015-08-16 13:00:50.111704"], ["updated_at", "2015-08-16 13:00:50.111704"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "scavenger_hunts" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Hyde Park Scavenger Hunt"], ["created_at", "2015-08-16 13:00:50.123050"], ["updated_at", "2015-08-16 13:00:50.123050"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "missions" ("title", "image", "clue", "lat", "long", "hint_one", "hint_two", "scavenger_hunt_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "The House Frank Built"], ["image", "VSx6KIPGurf2c95M1MU7UmYbOno-eLpuvWBvqQlFrjI.jpeg"], ["clue", "Famous architect's abode"], ["lat", "41.801522"], ["long", "-87.596833"], ["hint_one", "Ten windows and a chimney face the sidewalk."], ["hint_two", "Its on a two way street off S. Woodlawn"], ["scavenger_hunt_id", 1], ["created_at", "2015-08-16 13:00:50.138918"], ["updated_at", "2015-08-16 13:00:50.138918"]]
+  [1m[35m (0.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "games" ("player_one_id", "player_two_id", "scavenger_hunt_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["player_one_id", 1], ["player_two_id", 2], ["scavenger_hunt_id", 1], ["created_at", "2015-08-16 13:00:50.181134"], ["updated_at", "2015-08-16 13:00:50.181134"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "scavenger_hunts" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Secret Scav Hunt"], ["created_at", "2015-08-16 13:00:50.185856"], ["updated_at", "2015-08-16 13:00:50.185856"]]
+  [1m[35m (0.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "missions" ("title", "image", "clue", "lat", "long", "hint_one", "hint_two", "scavenger_hunt_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["title", "Find the The Chicago Innovation Exchange"], ["image", "W_KV6PQPg9XsgkSQNCdgZp4h9ZZYaA8Ztes7Srvojlg.jpeg"], ["clue", "Famous architect's abode"], ["lat", "41.801522"], ["long", "-87.596833"], ["hint_one", "Ten windows and a chimney face the sidewalk."], ["hint_two", "Its on a two way street off S. Woodlawn"], ["scavenger_hunt_id", 1], ["created_at", "2015-08-16 13:00:50.188340"], ["updated_at", "2015-08-16 13:00:50.188340"]]
+  [1m[36m (0.4ms)[0m  [1mcommit transaction[0m
+  [1m[36m (2.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.6ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20150815184321)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150815184321"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Migrating to CreateScavengerHunts (20150815184640)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "scavenger_hunts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150815184640"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+Migrating to CreateGames (20150815212110)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "games" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "player_one_id" integer, "player_two_id" integer, "scavenger_hunt_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150815212110"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+Migrating to CreateMissions (20150815212311)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "missions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "image" varchar, "clue" varchar, "lat" varchar, "long" varchar, "hint_one" varchar, "hint_two" varchar, "scavenger_hunt_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150815212311"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (2.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20150815184321)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150815184321"]]
+  [1m[35m (0.4ms)[0m  commit transaction
+Migrating to CreateScavengerHunts (20150815184640)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "scavenger_hunts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150815184640"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+Migrating to CreateGames (20150815212110)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "games" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "player_one_id" integer, "player_two_id" integer, "scavenger_hunt_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150815212110"]]
+  [1m[35m (0.4ms)[0m  commit transaction
+Migrating to CreateMissions (20150815212311)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "missions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "image" varchar, "clue" varchar, "lat" varchar, "long" varchar, "hint_one" varchar, "hint_two" varchar, "scavenger_hunt_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150815212311"]]
+  [1m[35m (0.4ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."username" = 'father' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "father"], ["password_digest", "$2a$10$/Q3NopeT/uecZUxig4ENw.77O5l9v42r3RPGK8k5RvZVHKaraMVEy"], ["created_at", "2015-08-16 13:01:47.785204"], ["updated_at", "2015-08-16 13:01:47.785204"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."username" = 'son' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "son"], ["password_digest", "$2a$10$uX3nSSZl69LDT0EeB.sNV.aiqDONd3E48FYk.1Wse41i/SS8n2fBi"], ["created_at", "2015-08-16 13:01:47.862592"], ["updated_at", "2015-08-16 13:01:47.862592"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "scavenger_hunts" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Hyde Park Scavenger Hunt"], ["created_at", "2015-08-16 13:01:47.871774"], ["updated_at", "2015-08-16 13:01:47.871774"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "missions" ("title", "image", "clue", "lat", "long", "hint_one", "hint_two", "scavenger_hunt_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "The House Frank Built"], ["image", "VSx6KIPGurf2c95M1MU7UmYbOno-eLpuvWBvqQlFrjI.jpeg"], ["clue", "Famous architect's abode"], ["lat", "41.801522"], ["long", "-87.596833"], ["hint_one", "Ten windows and a chimney face the sidewalk."], ["hint_two", "Its on a two way street off S. Woodlawn"], ["scavenger_hunt_id", 1], ["created_at", "2015-08-16 13:01:47.885183"], ["updated_at", "2015-08-16 13:01:47.885183"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "missions" ("title", "image", "clue", "lat", "long", "hint_one", "hint_two", "scavenger_hunt_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["title", "Find the Mother Egg"], ["image", "s9Kk9ezcjOtUDsxplsnaIwYKBx9HmibN-DWqgmMv9K4.jpeg"], ["clue", "They guard the nest in the park. Watching over the fountain and and its 8 benches."], ["lat", "41.799256"], ["long", "-87.592894"], ["hint_one", "Some call it the beautiful egg."], ["hint_two", "Its nested in Nichols Park."], ["scavenger_hunt_id", 1], ["created_at", "2015-08-16 13:01:47.887726"], ["updated_at", "2015-08-16 13:01:47.887726"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "missions" ("title", "image", "clue", "lat", "long", "hint_one", "hint_two", "scavenger_hunt_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Queen of Funk"], ["image", "zcsT47vsoK-Au42jvD6pEUFxinAaAe8YNjSmOgiiBYM.jpeg"], ["clue", "Find Chaka Khan street, the one way street begins there."], ["lat", "41.799656"], ["long", "-87.592400"], ["hint_one", "She’s known for her song I feel for you and I’m every woman"], ["hint_two", "A park is located diagonally from her street."], ["scavenger_hunt_id", 1], ["created_at", "2015-08-16 13:01:47.889392"], ["updated_at", "2015-08-16 13:01:47.889392"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "missions" ("title", "image", "clue", "lat", "long", "hint_one", "hint_two", "scavenger_hunt_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["title", "Find the kissing rock"], ["image", "u_2BjELTKDA1yD0cBbgQC62Vh5LGzKc7P3jf6OP1IvQ.jpeg"], ["clue", "The seven story building across the street watches over the corner.  Dorchester hangs on the lamppost."], ["lat", "41.799636"], ["long", "-87.591744"], ["hint_one", "Baskin Robbins"], ["hint_two", "The president courted the first lady here."], ["scavenger_hunt_id", 1], ["created_at", "2015-08-16 13:01:47.924290"], ["updated_at", "2015-08-16 13:01:47.924290"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "missions" ("title", "image", "clue", "lat", "long", "hint_one", "hint_two", "scavenger_hunt_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Find the Iron Flower"], ["image", "4R7kOe4u7h_lt6N_EFx0POX4KS4xPsiAUcluM47YAK8.jpeg"], ["clue", "Take a pic of the flower in the church window located on a street corner. Also, Jeffrey own a dollar store across the street."], ["lat", "41.799694"], ["long", "-87.590050"], ["hint_one", "It has 12 pedals on the flower, the building is made of gray brick."], ["hint_two", "Across the street is a bank and market."], ["scavenger_hunt_id", 1], ["created_at", "2015-08-16 13:01:47.927009"], ["updated_at", "2015-08-16 13:01:47.927009"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "games" ("player_one_id", "player_two_id", "scavenger_hunt_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["player_one_id", 1], ["player_two_id", 2], ["scavenger_hunt_id", 1], ["created_at", "2015-08-16 13:01:47.938313"], ["updated_at", "2015-08-16 13:01:47.938313"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "scavenger_hunts" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Secret Scav Hunt"], ["created_at", "2015-08-16 13:01:47.940278"], ["updated_at", "2015-08-16 13:01:47.940278"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "missions" ("title", "image", "clue", "lat", "long", "hint_one", "hint_two", "scavenger_hunt_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["title", "Find the The Chicago Innovation Exchange"], ["image", "W_KV6PQPg9XsgkSQNCdgZp4h9ZZYaA8Ztes7Srvojlg.jpeg"], ["clue", "Famous architect's abode"], ["lat", "41.801522"], ["long", "-87.596833"], ["hint_one", "Ten windows and a chimney face the sidewalk."], ["hint_two", "Its on a two way street off S. Woodlawn"], ["scavenger_hunt_id", 1], ["created_at", "2015-08-16 13:01:47.943045"], ["updated_at", "2015-08-16 13:01:47.943045"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for ::1 at 2015-08-16 08:02:15 -0500
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/railties-4.2.3/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 61ms (Views: 60.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/1" for ::1 at 2015-08-16 08:02:20 -0500
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (0.1ms)[0m  [1mSELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mScavengerHunt Load (0.1ms)[0m  SELECT  "scavenger_hunts".* FROM "scavenger_hunts" WHERE "scavenger_hunts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMission Load (0.2ms)[0m  [1mSELECT "missions".* FROM "missions" WHERE "missions"."scavenger_hunt_id" = ?[0m  [["scavenger_hunt_id", 1]]
+Completed 200 OK in 37ms (Views: 0.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/games/1" for ::1 at 2015-08-16 08:08:22 -0500
+
+SyntaxError (/Users/yiannismoses/POPS-LIFE-Backend/app/controllers/games_controller.rb:8: syntax error, unexpected ':', expecting '}'
+...ponse = { :players => @players:scavenger_hunt => @scavenger_...
+...                               ^
+/Users/yiannismoses/POPS-LIFE-Backend/app/controllers/games_controller.rb:8: syntax error, unexpected =>, expecting :: or '[' or '.'
+...> @scavenger_hunt, :missions => @missions }
+...                               ^):
+  app/controllers/games_controller.rb:8: syntax error, unexpected ':', expecting '}'
+  app/controllers/games_controller.rb:8: syntax error, unexpected =>, expecting :: or '[' or '.'
+
+
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.9ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.6ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (15.4ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yiannismoses/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (35.0ms)
+
+
+Started GET "/games/1" for ::1 at 2015-08-16 08:08:33 -0500
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGame Load (0.1ms)[0m  SELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mScavengerHunt Load (0.1ms)[0m  [1mSELECT  "scavenger_hunts".* FROM "scavenger_hunts" WHERE "scavenger_hunts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMission Load (0.1ms)[0m  SELECT "missions".* FROM "missions" WHERE "missions"."scavenger_hunt_id" = ?  [["scavenger_hunt_id", 1]]
+Completed 200 OK in 85ms (Views: 0.2ms | ActiveRecord: 1.5ms)
+=======
 Started GET "/" for ::1 at 2015-08-15 16:56:35 -0500
 
 ActiveRecord::PendingMigrationError (
@@ -614,6 +1192,7 @@ SyntaxError (/Users/Gaby/dev/POV9/POPS-LIFE-Backend/app/controllers/users_contro
   Rendered /Users/Gaby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
   Rendered /Users/Gaby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
   Rendered /Users/Gaby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (60.5ms)
+<<<<<<< HEAD
 
 
 Started GET "/users" for ::1 at 2015-08-15 17:01:40 -0500
@@ -632,3 +1211,81 @@ Started GET "/users" for ::1 at 2015-08-15 17:47:21 -0500
 Processing by UsersController#index as HTML
   [1m[35mUser Load (3.7ms)[0m  SELECT "users".* FROM "users"
 Completed 200 OK in 96ms (Views: 4.1ms | ActiveRecord: 3.7ms)
+=======
+>>>>>>> c4386ae673f587d5a7c63c54d5455fc0fddff699
+>>>>>>> db958555e4ce14738d3113488f370b18489fa5f7
+
+
+Started GET "/" for ::1 at 2015-08-16 10:19:25 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/Gaby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.2.3/lib/rails/templates/rails/welcome/index.html.erb (3.7ms)
+Completed 200 OK in 36ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2015-08-16 10:19:38 -0500
+
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  actionpack (4.2.3) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.3) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Gaby/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Gaby/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Gaby/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Gaby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.8ms)
+  Rendered /Users/Gaby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/Gaby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Gaby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Gaby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Gaby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (23.9ms)
+  Rendered /Users/Gaby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Gaby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/Gaby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (54.6ms)
