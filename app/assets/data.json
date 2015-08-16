@@ -1,0 +1,92 @@
+[
+  {
+    "title": "The house Frank built",
+    "image": "src/images/mission1.jpg",
+    "location": {
+      "latitude": 41.801522,
+      "longitude": -87.596833
+    },
+    "clue": "Above the beautiful house four women stand guard out front.",
+    "hints": [
+      "Ten windows and a chimney face the sidewalk.",
+      "Its on a two way street off S. Woodlawn"
+    ],
+    "finish": "Congrats!!! Another 25 Points!!!"
+  },
+  {
+    "title": "Mother Egg",
+    "image": "src/images/mission2.jpg",
+    "location": {
+      "latitude": 41.799256,
+      "longitude": -87.592894
+    },
+    "clue": "They guard the nest in the park. Watching over the fountain and and its 8 benches.",
+    "hints": [
+      "Some call it the beautiful egg.",
+      "Its nested in Nichols Park."
+    ],
+    "finish": "Congrats!!! Another 25 Points!!!"
+  },
+  {
+    "title": "Queen of Funk",
+    "image": "src/images/mission3.jpg",
+    "location": {
+      "latitude": 41.799656,
+      "longitude": -87.592400
+    },
+    "clue": "Find Chaka Khan street, the one way street begins there.",
+    "hints": [
+      "She’s known for her song \"I feel for you\" and \"I'm every woman\"",
+      "A park is located diagonally from her street."
+    ],
+    "finish": "Congrats!!! Another 25 Points!!!"
+  },
+  {
+    "title": "Kissing rock",
+    "image": "src/images/mission4.jpg",
+    "location": {
+      "latitude": 41.799636,
+      "longitude": -87.591744
+    },
+    "clue": "The seven story building across the street watches over the corner.  Dorchester hangs on the lamppost.",
+    "hints": [
+      "Baskin Robbins",
+      "The president courted the first lady here."
+    ],
+    "finish": "Congrats!!! Another 25 Points!!!"
+  },
+  {
+    "title": "Iron Flower",
+    "image": "src/images/mission5.jpg",
+    "location": {
+      "latitude": 41.799694,
+      "longitude": -87.590050
+    },
+    "clue": "Take a pic of the flower in the church window located on a street corner. Also, Jeffrey own a dollar store across the street.",
+    "hints": [
+      "It has 12 pedals on the flower, the building is made of gray brick.",
+      "Across the street is a bank and market."
+    ],
+    "finish": "Congrats!!! You win 25 Points!!!",
+    "facts": {
+      "video": {
+        "text": "You’ve unlocked the secret video!!!",
+        "embed_url": "https://player.vimeo.com/video/136203021"
+      }
+    }
+  },
+  {
+    "title": "The Chicago Innovation Exchange",
+    "image": "src/images/mission6.jpg",
+    "location": {
+      "latitude": 41.799656,
+      "longitude": -87.592400
+    },
+    "clue": "Transforming your ideas into reality.",
+    "hints": [
+      "Created by the University of Chicago",
+      "In Hyde Park"
+    ],
+    "finish": "Mission Accomplished"
+  }
+]
